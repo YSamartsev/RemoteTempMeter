@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/BSP/Components -I ../Drivers/BSP\Components/Common -I ..\Middlewares\Third_Party\FatFs\src -I ..\Drivers\BSP\Adafruit_Shield -I ..\Drivers\BSP\STM32F1xx_Nucleo -I ..\Middlewares\Third_Party\FatFs\src\drivers -I ..\Drivers\BSP\Components\st7789
+-I.\RTE\_TFT_LCD
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB
+-o tft_lcd\lcd.o --omf_browse tft_lcd\lcd.crf --depend tft_lcd\lcd.d "..\HARDWARE\LCD\lcd.c"
